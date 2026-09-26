@@ -83,7 +83,7 @@ return [
             'token_service' => 'whatsapp-service',
         ],
         'auth_service' => [
-            'base_uri' => env('AUTH_SERVICE_BASE_URI', 'https://saltsync-ecosystem-auth.test/api'),
+            'base_uri' => env('AUTH_SERVICE_BASE_URI', 'https://fieldvisit-ecosystem-auth-service.test/api'),
             'cache_ttl' => 300,
             'circuit_ttl' => 20,
             'token_service' => 'auth-service',
@@ -104,7 +104,7 @@ return [
         ],
 
         'saltsync_service' => [
-            'base_uri' => env('SALTSYNC_SERVICE_BASE_URI', 'https://care.saltsync.com/api'),
+            'base_uri' => env('FIELDVISIT_SERVICE_BASE_URI', 'https://fieldvisit-ecosystem-auth-service.test/api'),
             'cache_ttl' => 600,
             'circuit_ttl' => 30,
             'token_service' => 'saltsync-service',
@@ -117,23 +117,24 @@ return [
             'token_service' => 'support-service',
         ],
         'business_service' => [
-            'base_uri' => env('BUSINESS_SERVICE_BASE_URI', 'https://saltsync-ecosystem-business.test/api'),
+            'base_uri' => env('BUSINESS_SERVICE_BASE_URI', 'https://fieldvisit-ecosystem-business-service.test/api'),
             'cache_ttl' => 300,
             'circuit_ttl' => 20,
             'token_service' => 'business_service',
         ],
         'network_service' => [
-            'base_uri' => env('NETWORK_SERVICE_BASE_URI', 'http://103.107.160.22:8008/api'),
+            'base_uri' => env('NETWORK_SERVICE_BASE_URI', 'https://fieldvisit-ecosystem-network-service.test/api'),
             'cache_ttl' => 300,
             'circuit_ttl' => 20,
             'token_service' => 'network-service',
         ],
 
         'billing_service' => [
-            'base_uri' => env('BILLING_SERVICE_BASE_URI', 'http://103.107.160.22:8008/api'),
+            'base_uri' => env('BILLING_SERVICE_BASE_URI', 'https://fieldvisit-ecosystem-network-service.test/api'),
             'cache_ttl' => 300,
             'circuit_ttl' => 20,
             'token_service' => 'billing-service',
         ],
     ],
 ];
+
