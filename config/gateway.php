@@ -83,7 +83,7 @@ return [
             'token_service' => 'whatsapp-service',
         ],
         'auth_service' => [
-            'base_uri' => env('AUTH_SERVICE_BASE_URI', 'https://auth.saltsync.com/api'),
+            'base_uri' => env('AUTH_SERVICE_BASE_URI', 'https://saltsync-ecosystem-auth.test/api'),
             'cache_ttl' => 300,
             'circuit_ttl' => 20,
             'token_service' => 'auth-service',
@@ -117,7 +117,7 @@ return [
             'token_service' => 'support-service',
         ],
         'business_service' => [
-            'base_uri' => env('BUSINESS_SERVICE_BASE_URI', 'http://103.107.160.22:8007/api'),
+            'base_uri' => env('BUSINESS_SERVICE_BASE_URI', 'https://saltsync-ecosystem-business.test/api'),
             'cache_ttl' => 300,
             'circuit_ttl' => 20,
             'token_service' => 'business_service',
